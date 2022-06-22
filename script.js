@@ -1,25 +1,22 @@
 const fillers = {
-    adventurer: ["My dude", "Bro", "Adventurer", "Traveller", "Fellow", "Citizen", "Ashen One", "Dragonborn", "Cool person", "Tarnished", "$adventurer and $adventurer", "$adventurer, $adventurer, and $adventurer", "Geoff"],
-    pre: ["Fra", "Tro", "Gre", "Pan", "Ast", "Ara"],
-    post: ["gria", "ston", "gott","-on-the-lee", "ora", "Ara", "uwu"],
-    people: ["kindly", "meek", "brave", "wise", "sacred", "cherished", "honored", "forgotten", "apathetic", "mystic", "orca"],
-    item: ["axe", "staff", "book", "cloak", "shield", "club", "sword", "magic gloves", "galvel", "fists", "mace", "potato"],
-    num: ["two", "three", "eleven", "so many", "too many", "an unsatisfying number of", "barely any", "an unspecified amount of", "surely a satisfactory number of"],
-    looty: ["gleaming", "valuable", "esteemed", "rare", "exalted", "scintillating", "kinda gross but still usefull", "complete garbage"],
-    loots: ["coins", "chalices", "ingots", "hides", "victory points", "gems","scrolls", "bananas", "noodles", "goblins", "CS Majors", "college credits"],
-    baddies: ["orcs", "glubs", "fishmen", "cordungles", "mountain trolls", "college professors", "dragon", "evil $adventurer", "agents of chaos"],
-    message: ["call", "txt", "post", "decree", "shoutz", "tweets", "choiche", "hearkens", "harkening", "harkenening", "harkenenening", "...wait, no! Come back", "Watermelon"],
-    
+    citizen: ["Captain Barka", "Big Jimmy", "Scarlett", "The Forsaken", "The Peacekeepers"],
+    districtNum:["0","1","2","3","4","5","6","7","8","9"],
+    goal: ["deliver this package", "clear the area", "fix the water supply system", "rescue the civilians", "plant the beacons"],
+    type:["bruiser", "screamer", "fast", "armored", "spitter","hunter"],
+    weapon:["shotgun", "pistol", "rifle", "sword", "bat", "car", "flamethrower", "bow and arrow"],
+    firstName: ["Brian", "Loid", "Rick", "Carl", "Alex"],
+    lastName: ["Hansen", "Forger", "Grimes","Mercer"], 
+    amount:["10","100"],
+    reward:["credits", "bottlecaps", "supplies"],
+    boss:["Big Bertha", "Little Nina", "Joey Stalone", "Captain Soap"],
   };
   
-  const template = `$adventurer, heed my $message!
-  
-  I have just come from $pre$post where the $people folk are in desperate need. Their town has been overrun by $baddies. You must venture forth at once, taking my $item, and help them.
-  
-  It is told that the one who can rescue them will be awarded with $num $looty $loots. Surely this must tempt one such as yourself!
-  `;
-  
-  
+  const template = `Hello survivor, $citizen needs your services.
+                     Head out to District $districtNum and $goal.
+                     Look out the area has been flooded by $type zombies you may want to bring a $weapon for these ones.
+                     Once you're done $firstName $lastName will see to it that you are paid $amount $reward for your services. Once you are done come talk to 
+                     me, $boss for your next job. `
+
   // STUDENTS: You don't need to edit code below this line.
   
   const slotPattern = /\$(\w+)/;
